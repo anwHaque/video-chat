@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     let roomId = uuid();
     res.redirect(`/${roomId}`);
 })
-
+//Room ID
 app.get('/:room', (req, res) => {
     res.render('room', {roomId: req.params.room});
 });
